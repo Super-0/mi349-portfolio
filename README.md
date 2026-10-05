@@ -41,4 +41,5 @@ I checked the page with the W3C HTML Validator and fixed the errors it found.
 
 The site will be deployed with Netlify.
 
-Live site: benjaminkovarik.netlify.app
+Live site: 
+benjaminkovarik.netlify.app
