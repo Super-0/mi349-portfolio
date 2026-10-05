@@ -16,7 +16,7 @@ The portfolio includes:
 - Projects
 - Contact
 
-The navigation links to each part of the page, so visitors can move around the site without leaving it.
+The navigation links to each part of the page, so visitors can move around the site.
 
 ## Projects
 
