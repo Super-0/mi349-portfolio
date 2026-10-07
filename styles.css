@@ -1,56 +1,325 @@
-/* EXPERIMENT 3: CYBER-SIGIL */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Special+Elite&display=swap");
 
-h2 {
-    position: relative;
-    padding-left: 42px;
+:root {
+    --background: #ecebe6;
+    --paper: #f7f6f1;
+    --black: #090909;
+    --text: #151515;
+    --gray: #66635f;
+    --red: #761c1c;
+    --line: #96928b;
 }
 
-h2::before {
-    content: "";
-    position: absolute;
+* {
+    box-sizing: border-box;
+}
 
-    left: 5px;
-    top: 50%;
+html {
+    scroll-behavior: smooth;
+}
 
-    width: 24px;
-    height: 24px;
+body {
+    margin: 0;
+    color: var(--text);
+    background-color: var(--background);
 
-    border-left: 2px solid var(--red);
-    border-right: 2px solid var(--red);
+    background-image:
+        repeating-linear-gradient(
+            76deg,
+            transparent,
+            transparent 70px,
+            rgba(0, 0, 0, 0.025) 71px,
+            transparent 73px
+        ),
+        repeating-linear-gradient(
+            104deg,
+            transparent,
+            transparent 95px,
+            rgba(118, 28, 28, 0.025) 96px,
+            transparent 98px
+        );
 
-    transform: translateY(-50%) rotate(45deg);
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+header {
+    padding: 24px 8%;
+    color: white;
+    background-color: var(--black);
+    border-bottom: 4px solid var(--red);
+}
+
+header img {
+    display: block;
+    margin-bottom: 8px;
+
+    filter: grayscale(100%) contrast(170%);
+
+    border: 1px solid white;
+    box-shadow: 4px 4px 0 var(--red);
+}
+
+header p {
+    margin: 4px 0;
+    font-family: "IBM Plex Mono", monospace;
+    letter-spacing: 0.08em;
+}
+
+nav {
+    margin-top: 18px;
+    border-top: 1px solid #444;
+    padding-top: 12px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav a {
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #c87a7a;
+    text-shadow: 2px 1px var(--red);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 8%;
+}
+
+section {
+    margin-bottom: 110px;
 }
 
 section + section {
-    position: relative;
+    padding-top: 55px;
+    border-top: 2px solid var(--black);
 }
 
-section + section::before {
-    content: "×";
+#intro {
+    min-height: 410px;
+    padding-top: 55px;
+}
 
-    position: absolute;
+#intro p {
+    max-width: 690px;
+}
 
-    top: -17px;
-    left: 50%;
+h1 {
+    margin: 0 0 30px;
 
-    padding: 0 10px;
+    font-family: "Special Elite", serif;
+    font-size: 3.8rem;
+    font-weight: normal;
+    line-height: 1;
 
-    background-color: var(--background);
+    transform: rotate(-0.6deg);
 
+    text-shadow:
+        3px 1px rgba(118, 28, 28, 0.45),
+        -1px 0 #777;
+}
+
+h1::before {
+    content: "> ";
     color: var(--red);
+    font-family: "IBM Plex Mono", monospace;
+}
+
+h2 {
+    display: inline-block;
+    margin: 0 0 38px;
 
     font-family: "IBM Plex Mono", monospace;
-    font-size: 1.4rem;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 
-    transform: rotate(45deg);
+    border-bottom: 2px solid var(--black);
+}
+
+h2::after {
+    content: "_";
+    color: var(--red);
+    animation: blink 1.1s infinite;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.3rem;
+}
+
+h3::before {
+    content: "// ";
+    color: var(--red);
+}
+
+h4 {
+    font-family: "IBM Plex Mono", monospace;
+    color: var(--red);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+#about ul {
+    padding-left: 25px;
+}
+
+#about li {
+    margin-bottom: 6px;
+}
+
+#about li::marker {
+    color: var(--red);
 }
 
 article {
-    border-left: 3px solid var(--dark-red);
+    margin: 60px 0;
+    padding: 30px;
+
+    background-color: rgba(255, 255, 255, 0.55);
+
+    border-top: 3px solid var(--black);
+    border-bottom: 1px solid var(--black);
+
+    box-shadow:
+        8px 8px 0 rgba(0, 0, 0, 0.11),
+        -3px 0 0 rgba(118, 28, 28, 0.45);
 }
 
-article h3::after {
-    content: " ┼";
+article:nth-of-type(odd) {
+    transform: rotate(-0.2deg);
+}
 
+article:nth-of-type(even) {
+    transform: rotate(0.2deg);
+}
+
+article p {
+    max-width: 760px;
+}
+
+article li::marker {
     color: var(--red);
+}
+
+figure {
+    margin: 30px 0;
+    transform: rotate(-0.6deg);
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    filter: grayscale(100%) contrast(145%);
+
+    border: 2px solid var(--black);
+
+    box-shadow:
+        7px 7px 0 rgba(0, 0, 0, 0.18),
+        -3px -2px 0 rgba(118, 28, 28, 0.2);
+}
+
+figure img:hover {
+    filter: grayscale(50%) contrast(125%);
+}
+
+figcaption {
+    margin-top: 10px;
+
+    color: var(--gray);
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+}
+
+figcaption::before {
+    content: "IMG_";
+    color: var(--red);
+}
+
+a {
+    color: var(--red);
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--black);
+}
+
+article a[target="_blank"] {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.84rem;
+}
+
+#contact {
+    padding-bottom: 30px;
+}
+
+address {
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+}
+
+footer {
+    padding: 34px 8%;
+
+    background-color: var(--black);
+    color: #d4d2cb;
+
+    border-top: 4px solid var(--red);
+}
+
+footer p {
+    margin: 5px 0;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+}
+
+footer a {
+    color: #c88a8a;
+}
+
+::selection {
+    background-color: var(--red);
+    color: white;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
