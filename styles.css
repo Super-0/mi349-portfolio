@@ -1,43 +1,45 @@
-/* EXPERIMENT 1: CHAOTIC LINEWORK */
+/* EXPERIMENT 2: VOID */
 
 body {
     background-image:
-        repeating-linear-gradient(
-            73deg,
-            transparent,
-            transparent 35px,
-            rgba(0, 0, 0, 0.035) 36px,
-            transparent 38px
+        radial-gradient(
+            circle at 85% 18%,
+            #050505 0,
+            #050505 65px,
+            rgba(5, 5, 5, 0.8) 66px,
+            rgba(5, 5, 5, 0.2) 72px,
+            transparent 105px
+        ),
+        radial-gradient(
+            circle at 8% 68%,
+            rgba(0, 0, 0, 0.7) 0,
+            rgba(0, 0, 0, 0.7) 25px,
+            transparent 27px
         ),
         repeating-linear-gradient(
-            108deg,
+            0deg,
             transparent,
-            transparent 65px,
-            rgba(60, 13, 13, 0.035) 66px,
-            transparent 68px
+            transparent 3px,
+            rgba(0, 0, 0, 0.025) 4px
         );
 }
 
-#projects {
+#intro {
     background-image:
-        repeating-linear-gradient(
-            -8deg,
-            transparent,
-            transparent 22px,
-            rgba(0, 0, 0, 0.025) 23px
+        radial-gradient(
+            circle at 90% 45%,
+            var(--black) 0,
+            var(--black) 45px,
+            transparent 47px
         );
 }
 
-article:nth-of-type(odd) {
-    transform: rotate(-0.25deg);
+article {
+    border-radius: 0;
 }
 
-article:nth-of-type(even) {
-    transform: rotate(0.2deg);
-}
-
-h2 {
-    text-decoration: line-through;
-    text-decoration-color: rgba(114, 27, 27, 0.25);
-    text-decoration-thickness: 1px;
+figure img {
+    box-shadow:
+        9px 9px 0 black,
+        13px 13px 0 rgba(114, 27, 27, 0.25);
 }
