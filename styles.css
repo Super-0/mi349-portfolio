@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap");
 
 :root {
-    --background: #eeeeec;
-    --paper: #f8f8f5;
+    --background: #f2f2ee;
+    --paper: #ffffff;
     --black: #080808;
-    --text: #141414;
-    --gray: #676a6d;
-    --blue: #405f80;
-    --light-blue: #94aabc;
-    --line: #777c80;
+    --text: #151515;
+    --gray: #686866;
+    --blue: #304d6d;
+    --light-blue: #8fa4b8;
+    --line: #8b8b87;
 }
 
 * {
@@ -27,8 +27,8 @@ body {
     background-image: repeating-linear-gradient(
         0deg,
         transparent,
-        transparent 4px,
-        rgba(0, 0, 0, 0.025) 5px
+        transparent 5px,
+        rgba(0, 0, 0, 0.018) 6px
     );
 
     color: var(--text);
@@ -42,13 +42,13 @@ body {
 /* HEADER */
 
 header {
-    padding: 24px 8% 0;
+    padding: 22px 8% 0;
 
     background-color: var(--black);
 
     color: white;
 
-    border-bottom: 4px solid var(--blue);
+    border-bottom: 5px solid var(--blue);
 }
 
 header img {
@@ -59,7 +59,7 @@ header img {
 
     margin-bottom: 8px;
 
-    border: 1px solid #d9d9d9;
+    border: 1px solid #dddddd;
 }
 
 header p {
@@ -76,11 +76,11 @@ header p {
 /* NAVIGATION */
 
 nav {
-    margin-top: 25px;
+    margin-top: 24px;
 
-    padding: 17px 0;
+    padding: 18px 0;
 
-    border-top: 1px solid #343434;
+    border-top: 1px solid #383838;
 }
 
 nav ul {
@@ -101,14 +101,14 @@ nav li {
 }
 
 nav a {
-    color: #eeeeee;
+    color: #f1f1f1;
 
     font-family: "IBM Plex Mono", monospace;
 
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     font-weight: 500;
 
-    letter-spacing: 0.13em;
+    letter-spacing: 0.12em;
 
     text-decoration: none;
 
@@ -128,36 +128,59 @@ nav a:hover {
 }
 
 
-/* MAIN */
+/* MAIN PAGE */
 
 main {
     max-width: 1000px;
 
     margin: 0 auto;
 
-    padding: 75px 8%;
+    padding: 80px 8%;
 }
 
 section {
-    margin-bottom: 110px;
+    margin-bottom: 115px;
 }
 
 
 /* SECTION DIVIDERS */
 
 section + section {
-    padding-top: 65px;
+    position: relative;
+
+    padding-top: 70px;
 
     border-top: 2px solid var(--black);
+}
+
+section + section::before {
+    position: absolute;
+
+    top: -16px;
+    left: 50%;
+
+    padding: 0 14px;
+
+    background-color: var(--background);
+
+    color: var(--blue);
+
+    font-family: "IBM Plex Mono", monospace;
+
+    font-size: 1.25rem;
+
+    content: "◇";
+
+    transform: translateX(-50%);
 }
 
 
 /* INTRO */
 
 #intro {
-    min-height: 390px;
+    min-height: 430px;
 
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 #intro p {
@@ -169,18 +192,18 @@ section + section {
 }
 
 #intro p:last-child {
-    color: #4e5154;
+    color: #50504e;
 }
 
 
 /* MAIN TITLE */
 
 h1 {
-    margin: 0 0 35px;
+    margin: 0 0 38px;
 
     font-family: "Unbounded", sans-serif;
 
-    font-size: 3.25rem;
+    font-size: 3.3rem;
     font-weight: 500;
 
     line-height: 1.1;
@@ -188,8 +211,8 @@ h1 {
     letter-spacing: -0.06em;
 
     text-shadow:
-        2px 1px var(--light-blue),
-        -1px 0 #555;
+        3px 1px var(--light-blue),
+        -1px 0 #555555;
 }
 
 h1::before {
@@ -199,7 +222,7 @@ h1::before {
 
     color: var(--blue);
 
-    font-size: 0.68em;
+    font-size: 0.7em;
 }
 
 
@@ -208,9 +231,7 @@ h1::before {
 h2 {
     display: inline-block;
 
-    margin: 0 0 45px;
-
-    padding-bottom: 8px;
+    margin: 0 0 48px;
 
     font-family: "IBM Plex Mono", monospace;
 
@@ -220,18 +241,16 @@ h2 {
     letter-spacing: 0.1em;
 
     text-transform: uppercase;
-
-    border-bottom: 3px solid var(--black);
 }
 
 h2::before {
     content: "◇";
 
-    margin-right: 13px;
+    margin-right: 12px;
 
     color: var(--blue);
 
-    font-size: 0.75em;
+    font-size: 0.72em;
 }
 
 h2::after {
@@ -247,7 +266,7 @@ h2::after {
 
 h3 {
     margin-top: 0;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
 
     font-family: "IBM Plex Mono", monospace;
 
@@ -275,13 +294,13 @@ h4 {
 
     font-size: 0.8rem;
 
-    letter-spacing: 0.12em;
+    letter-spacing: 0.13em;
 
     text-transform: uppercase;
 }
 
 
-/* BODY */
+/* PARAGRAPHS */
 
 p {
     max-width: 760px;
@@ -306,21 +325,41 @@ p {
 /* PROJECTS */
 
 article {
-    margin: 70px 0;
+    width: 88%;
 
-    padding: 27px 30px;
+    margin: 75px 0;
 
-    background-color: var(--paper);
+    padding: 26px 0 30px 25px;
+
+    background-color: transparent;
 
     border-top: 3px solid var(--black);
-    border-bottom: 1px solid var(--line);
     border-left: 5px solid var(--blue);
-
-    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.13);
+    border-bottom: 1px solid var(--line);
 }
 
+
+/* slight asymmetry */
+
+article:nth-of-type(1) {
+    margin-left: 0;
+}
+
+article:nth-of-type(2) {
+    width: 82%;
+
+    margin-left: 11%;
+}
+
+article:nth-of-type(3) {
+    width: 86%;
+
+    margin-left: 4%;
+}
+
+
 article p {
-    max-width: 750px;
+    max-width: 720px;
 }
 
 article ul {
@@ -344,6 +383,10 @@ figure {
     transform: rotate(-0.2deg);
 }
 
+article:nth-of-type(2) figure {
+    transform: rotate(0.2deg);
+}
+
 figure img {
     display: block;
 
@@ -351,13 +394,10 @@ figure img {
     height: auto;
 
     border: 2px solid var(--black);
-
-    box-shadow:
-        6px 6px 0 rgba(0, 0, 0, 0.18);
 }
 
 figcaption {
-    margin-top: 11px;
+    margin-top: 10px;
 
     color: var(--gray);
 
@@ -371,7 +411,7 @@ figcaption {
 figcaption::before {
     content: "◌";
 
-    margin-right: 7px;
+    margin-right: 8px;
 
     color: var(--blue);
 }
@@ -420,9 +460,9 @@ footer {
 
     background-color: var(--black);
 
-    color: #d2d2ce;
+    color: #d1d1cd;
 
-    border-top: 4px solid var(--blue);
+    border-top: 5px solid var(--blue);
 }
 
 footer p {
@@ -438,7 +478,7 @@ footer a {
 }
 
 
-/* SELECTED TEXT */
+/* TEXT SELECTION */
 
 ::selection {
     background-color: var(--blue);
@@ -447,7 +487,7 @@ footer a {
 }
 
 
-/* BLINKING CURSOR */
+/* BLINKING UNDERSCORE */
 
 @keyframes blink {
     0% {
