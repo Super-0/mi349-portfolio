@@ -1,45 +1,56 @@
-/* EXPERIMENT 2: VOID */
+/* EXPERIMENT 3: CYBER-SIGIL */
 
-body {
-    background-image:
-        radial-gradient(
-            circle at 85% 18%,
-            #050505 0,
-            #050505 65px,
-            rgba(5, 5, 5, 0.8) 66px,
-            rgba(5, 5, 5, 0.2) 72px,
-            transparent 105px
-        ),
-        radial-gradient(
-            circle at 8% 68%,
-            rgba(0, 0, 0, 0.7) 0,
-            rgba(0, 0, 0, 0.7) 25px,
-            transparent 27px
-        ),
-        repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 3px,
-            rgba(0, 0, 0, 0.025) 4px
-        );
+h2 {
+    position: relative;
+    padding-left: 42px;
 }
 
-#intro {
-    background-image:
-        radial-gradient(
-            circle at 90% 45%,
-            var(--black) 0,
-            var(--black) 45px,
-            transparent 47px
-        );
+h2::before {
+    content: "";
+    position: absolute;
+
+    left: 5px;
+    top: 50%;
+
+    width: 24px;
+    height: 24px;
+
+    border-left: 2px solid var(--red);
+    border-right: 2px solid var(--red);
+
+    transform: translateY(-50%) rotate(45deg);
+}
+
+section + section {
+    position: relative;
+}
+
+section + section::before {
+    content: "×";
+
+    position: absolute;
+
+    top: -17px;
+    left: 50%;
+
+    padding: 0 10px;
+
+    background-color: var(--background);
+
+    color: var(--red);
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.4rem;
+
+    transform: rotate(45deg);
 }
 
 article {
-    border-radius: 0;
+    border-left: 3px solid var(--dark-red);
 }
 
-figure img {
-    box-shadow:
-        9px 9px 0 black,
-        13px 13px 0 rgba(114, 27, 27, 0.25);
+article h3::after {
+    content: " ┼";
+
+    color: var(--red);
 }
