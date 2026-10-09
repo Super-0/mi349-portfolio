@@ -66,4 +66,4 @@ The site is deployed with Netlify.
 
 Live site: [benjaminkovarik.netlify.app](https://bkovarik-portfolio.netlify.app/)
 
-GitHub: [github.com/Super-0/mi349-portfolio](https://github.com/Super-0/mi349-portfolio/CSS)
+GitHub: [github.com/Super-0/mi349-portfolio](https://github.com/Super-0/mi349-portfolio/tree/CSS)
