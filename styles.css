@@ -335,14 +335,17 @@ p {
 
 article {
     width: 100%;
-
     margin: 70px 0;
+    padding: 30px;
 
-    padding: 25px 0 30px 25px;
+    background-color: #ffffff;
 
-    border-top: 3px solid var(--black);
+    border: 1px solid #c7c9c8;
     border-left: 5px solid var(--blue);
-    border-bottom: 1px solid var(--line);
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.14);
 }
 
 article p {
@@ -361,7 +364,6 @@ article li::marker {
     color: var(--blue);
 }
 
-
 /* PROJECT IMAGES */
 
 figure {
@@ -370,11 +372,11 @@ figure {
 
 figure img {
     display: block;
-
     max-width: 100%;
     height: auto;
 
     border: 2px solid var(--black);
+    border-radius: 5px;
 }
 
 figcaption {
