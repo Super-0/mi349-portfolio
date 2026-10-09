@@ -2,13 +2,11 @@
 
 :root {
     --background: #f2f2ef;
-    --paper: #ffffff;
     --black: #08090a;
     --text: #151515;
     --gray: #686b6d;
     --blue: #304f70;
     --light-blue: #8fa7bc;
-    --dark-blue: #172b40;
     --line: #85898c;
 }
 
@@ -68,12 +66,7 @@ header p {
     font-family: "IBM Plex Mono", monospace;
 
     font-size: 0.85rem;
-
     letter-spacing: 0.1em;
-
-    text-shadow:
-        1px 0 rgba(143, 167, 188, 0.55),
-        -1px 0 rgba(255, 255, 255, 0.12);
 }
 
 
@@ -117,9 +110,7 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
 
-    text-shadow:
-        1px 0 rgba(143, 167, 188, 0.4),
-        -1px 0 rgba(255, 255, 255, 0.08);
+    text-shadow: 1px 0 rgba(143, 167, 188, 0.35);
 }
 
 nav a::before {
@@ -135,7 +126,7 @@ nav a:hover {
 }
 
 
-/* MAIN PAGE */
+/* MAIN */
 
 main {
     max-width: 1000px;
@@ -150,7 +141,7 @@ section {
 }
 
 
-/* SECTION DIVIDERS */
+/* DIVIDERS */
 
 section + section {
     position: relative;
@@ -173,7 +164,6 @@ section + section::before {
     color: var(--blue);
 
     font-family: "IBM Plex Mono", monospace;
-
     font-size: 1.25rem;
 
     content: "◇";
@@ -203,7 +193,7 @@ section + section::before {
 }
 
 
-/* MAIN TITLE - STRONGEST GLITCH */
+/* MAIN TITLE */
 
 h1 {
     margin: 0 0 38px;
@@ -219,8 +209,7 @@ h1 {
 
     text-shadow:
         4px 0 rgba(48, 79, 112, 0.55),
-        -2px 1px rgba(10, 10, 10, 0.35),
-        1px -1px rgba(143, 167, 188, 0.3);
+        -2px 1px rgba(10, 10, 10, 0.35);
 }
 
 h1::before {
@@ -232,13 +221,11 @@ h1::before {
 
     font-size: 0.7em;
 
-    text-shadow:
-        2px 0 rgba(143, 167, 188, 0.5),
-        -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: none;
 }
 
 
-/* SECTION HEADINGS - MEDIUM GLITCH */
+/* SECTION HEADINGS */
 
 h2 {
     display: inline-block;
@@ -254,9 +241,7 @@ h2 {
 
     text-transform: uppercase;
 
-    text-shadow:
-        2px 0 rgba(48, 79, 112, 0.45),
-        -1px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 0 rgba(48, 79, 112, 0.35);
 }
 
 h2::before {
@@ -282,7 +267,7 @@ h2::after {
 }
 
 
-/* PROJECT TITLES - LIGHTER GLITCH */
+/* PROJECT TITLES */
 
 h3 {
     margin-top: 0;
@@ -295,8 +280,7 @@ h3 {
 
     letter-spacing: -0.02em;
 
-    text-shadow:
-        1px 1px rgba(48, 79, 112, 0.4);
+    text-shadow: 2px 0 rgba(48, 79, 112, 0.3);
 }
 
 h3::before {
@@ -322,9 +306,6 @@ h4 {
     letter-spacing: 0.13em;
 
     text-transform: uppercase;
-
-    text-shadow:
-        1px 0 rgba(143, 167, 188, 0.4);
 }
 
 
@@ -353,36 +334,15 @@ p {
 /* PROJECTS */
 
 article {
-    width: 88%;
+    width: 100%;
 
-    margin: 75px 0;
+    margin: 70px 0;
 
-    padding: 27px 0 30px 25px;
-
-    background-color: transparent;
+    padding: 25px 0 30px 25px;
 
     border-top: 3px solid var(--black);
     border-left: 5px solid var(--blue);
     border-bottom: 1px solid var(--line);
-}
-
-
-/* SLIGHTLY UNEVEN PROJECT PLACEMENT */
-
-article:nth-of-type(1) {
-    margin-left: 0;
-}
-
-article:nth-of-type(2) {
-    width: 84%;
-
-    margin-left: 9%;
-}
-
-article:nth-of-type(3) {
-    width: 87%;
-
-    margin-left: 3%;
 }
 
 article p {
@@ -402,16 +362,10 @@ article li::marker {
 }
 
 
-/* PROJECT IMAGES - CLEAN */
+/* PROJECT IMAGES */
 
 figure {
     margin: 30px 0;
-
-    transform: rotate(-0.15deg);
-}
-
-article:nth-of-type(2) figure {
-    transform: rotate(0.15deg);
 }
 
 figure img {
@@ -423,9 +377,6 @@ figure img {
     border: 2px solid var(--black);
 }
 
-
-/* IMAGE CAPTIONS - LIGHT GLITCH */
-
 figcaption {
     margin-top: 10px;
 
@@ -433,12 +384,7 @@ figcaption {
 
     font-family: "IBM Plex Mono", monospace;
 
-    font-size: 0.73rem;
-
-    letter-spacing: 0.02em;
-
-    text-shadow:
-        1px 0 rgba(48, 79, 112, 0.3);
+    font-size: 0.75rem;
 }
 
 figcaption::before {
@@ -447,8 +393,6 @@ figcaption::before {
     margin-right: 8px;
 
     color: var(--blue);
-
-    text-shadow: none;
 }
 
 
@@ -458,7 +402,6 @@ a {
     color: var(--blue);
 
     text-decoration-thickness: 1px;
-
     text-underline-offset: 3px;
 }
 
@@ -471,9 +414,6 @@ article a[target="_blank"] {
 
     font-size: 0.84rem;
     font-weight: 500;
-
-    text-shadow:
-        1px 0 rgba(48, 79, 112, 0.25);
 }
 
 
@@ -487,9 +427,6 @@ address {
     font-family: "IBM Plex Mono", monospace;
 
     font-style: normal;
-
-    text-shadow:
-        1px 0 rgba(48, 79, 112, 0.25);
 }
 
 
@@ -510,10 +447,7 @@ footer p {
 
     font-family: "IBM Plex Mono", monospace;
 
-    font-size: 0.78rem;
-
-    text-shadow:
-        1px 0 rgba(143, 167, 188, 0.25);
+    font-size: 0.8rem;
 }
 
 footer a {
@@ -521,7 +455,7 @@ footer a {
 }
 
 
-/* SELECTED TEXT */
+/* TEXT SELECTION */
 
 ::selection {
     background-color: var(--blue);
