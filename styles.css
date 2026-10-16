@@ -525,16 +525,6 @@ footer a {
     }
 }
 
-@media (min-width: 900px) {
-    .project-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .featured-project,
-    .wide-project {
-        grid-column: 1 / -1;
-    }
-}
 
 /* RESPONSIVE LAYOUT */
 
