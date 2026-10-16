@@ -526,16 +526,6 @@ footer a {
 }
 
 @media (min-width: 900px) {
-    #projects {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #projects article:last-of-type {
-        grid-column: 1 / -1;
-    }
-}
-
-@media (min-width: 900px) {
     .project-grid {
         grid-template-columns: 1fr 1fr;
     }
