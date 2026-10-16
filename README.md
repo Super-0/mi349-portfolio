@@ -71,8 +71,6 @@ The site has gotten a lot more CSS-heavy as I have worked on it. Some of the thi
 - Background gradients
 - Responsive project layouts
 
-The project layout starts as one column on smaller screens and changes on larger screens so some projects can sit next to each other while the featured projects take up more space.
-
 ## Deployment
 
 The site is deployed with Netlify.
