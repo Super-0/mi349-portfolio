@@ -159,16 +159,6 @@ section {
         2px 2px 0 rgba(48, 79, 112, 0.5);
 }
 
-.section-divider span:first-child::after {
-    left: 55%;
-    width: 22%;
-}
-
-.section-divider span:last-child::after {
-    left: 18%;
-    width: 28%;
-}
-
 .section-divider img {
     display: block;
 
