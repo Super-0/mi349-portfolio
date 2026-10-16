@@ -316,6 +316,20 @@ p {
 
 /* PROJECTS */
 
+/* AI PROMPT:
+Improve only the CSS for the project cards in my portfolio's Projects section. 
+Do not change my HTML or the overall responsive Grid layout. 
+My site has a Y2K / early-digital / glitch-inspired style using off-white, 
+IBM Plex Mono, scanlines, glitch text shadows, globe dividers, and a barcode in the footer.
+
+Focus on two things:
+1. Make all project cards feel more Y2K and technical, like old
+software panels, hardware labels, or early-2000s. Try sharpening the borders, 
+and maybe smaller corner radii might work, harder offset shadows, subtle inset highlights, and
+more structured spacing could help.
+2. Slightly make the card for PokeRun to be clearly featured. It should still
+clearly belong to the same card system, but feel more like the main project.*/
+
 .project-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -332,21 +346,28 @@ p {
     max-width: 950px;
 }
 
-article {
+.project-grid article {
+    position: relative;
+
+    padding: 24px;
+
     background-color: #f8fbfd;
 
     border: 2px solid #71879b;
-    border-top: 5px solid var(--blue);
+    border-top: 5px solid var(--black);
 
-    border-radius: 5px;
+    border-radius: 2px;
 
     box-shadow:
-        4px 4px 0 rgba(32, 48, 64, 0.18),
-        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        6px 6px 0 rgba(32, 48, 64, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.95),
+        inset 0 -1px 0 rgba(48, 79, 112, 0.18);
 }
 
-article h3 {
-    padding-bottom: 8px;
+.project-grid article h3 {
+    margin-bottom: 22px;
+
+    padding-bottom: 10px;
 
     border-bottom: 1px solid #aab3ba;
 
@@ -354,8 +375,48 @@ article h3 {
         2px 0 rgba(48, 79, 112, 0.3);
 }
 
-article p {
+/* AI-AUTHORED PROJECT CARD STYLING */
+
+.project-grid article p {
     max-width: 900px;
+
+    margin: 0 0 18px;
+}
+
+.project-grid article p:last-child {
+    margin-bottom: 0;
+}
+
+.featured-project {
+    border-top: 7px solid var(--blue);
+
+    box-shadow:
+        7px 7px 0 rgba(32, 48, 64, 0.26),
+        inset 0 1px 0 rgba(255, 255, 255, 0.95),
+        inset 0 -1px 0 rgba(48, 79, 112, 0.18);
+}
+
+/* AI-AUTHORED PROJECT CARD STYLING */
+
+.featured-project::before {
+    content: "FEATURED // 01";
+
+    position: absolute;
+    top: 12px;
+    right: 18px;
+
+    padding: 2px 6px;
+
+    background-color: var(--black);
+    color: var(--background);
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+}
+
+.featured-project h3 {
+    padding-top: 14px;
 }
 
 nav ul {
@@ -377,7 +438,14 @@ nav li {
 /* PROJECT IMAGES */
 
 figure {
-    margin: 30px 0;
+    margin: 26px 0 24px;
+
+    padding: 8px;
+
+    background-color: #e7edf1;
+
+    border: 1px solid #aab3ba;
+    border-left: 4px solid var(--blue);
 }
 
 figure img {
@@ -386,17 +454,33 @@ figure img {
     height: auto;
 
     border: 2px solid var(--black);
-    border-radius: 5px;
+    border-radius: 1px;
 }
 
 figcaption {
-    margin-top: 10px;
+    margin-top: 8px;
+    padding: 5px 2px 0;
+
+    border-top: 1px dotted #8b969d;
 
     color: var(--gray);
 
     font-family: "IBM Plex Mono", monospace;
 
     font-size: 0.8rem;
+}
+
+/* AI-AUTHORED PROJECT CARD STYLING */
+
+.project-grid article a {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.project-grid article a:hover {
+    color: var(--black);
+    text-shadow: 2px 0 rgba(48, 79, 112, 0.35);
 }
 
 
@@ -579,7 +663,7 @@ footer a {
         gap: 40px;
     }
 
-    article {
-        padding: 35px;
+    .project-grid article {
+        padding: 30px;
     }
 }
