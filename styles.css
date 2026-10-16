@@ -582,15 +582,4 @@ footer a {
     article {
         padding: 35px;
     }
-
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    .barcode-block {
-        margin-top: 0;
-        text-align: right;
-    }
 }
