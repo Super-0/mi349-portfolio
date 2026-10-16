@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Ben Kovarik's portfolio featuring web development, technology, and personal projects."
-    >
+    <meta name="description"
+        content="Ben Kovarik's portfolio featuring web development, technology, and personal projects.">
     <meta name="author" content="Ben Kovarik">
 
     <link rel="icon" type="image/png" href="images/ben-logo.png">
     <link rel="apple-touch-icon" href="images/ben-logo.png">
     <link rel="stylesheet" href="styles.css">
-    
+
     <title>Ben Kovarik | Portfolio</title>
 </head>
 
@@ -54,6 +52,14 @@
             </p>
         </section>
 
+        <div class="section-divider" aria-hidden="true">
+            <span></span>
+
+            <img src="images/y2k-globe.svg" alt="">
+
+            <span></span>
+        </div>
+
         <section id="about" aria-labelledby="about-heading">
             <h2 id="about-heading">About Me</h2>
 
@@ -81,120 +87,158 @@
             </ul>
         </section>
 
+        <div class="section-divider" aria-hidden="true">
+            <span></span>
+
+            <img src="images/y2k-globe.svg" alt="">
+
+            <span></span>
+        </div>
+
         <section id="projects" aria-labelledby="projects-heading">
             <h2 id="projects-heading">Projects</h2>
 
-            <p>
-                Here are a few projects I have worked on or am still building.
-            </p>
+            <div class="project-grid">
 
-            <article>
-                <h3>Kanji Practice App / Japanese Companion App</h3>
+                <article class="featured-project">
+                    <h3>PokéRun</h3>
 
-                <figure>
-                    <img
-                        src="images/japanese-class-companion.png"
-                        alt="Dashboard for a Japanese class companion showing course materials and upcoming work"
-                        width="800"
-                    >
-                    <figcaption>A dashboard concept for organizing Japanese course materials.</figcaption>
-                </figure>
+                    <figure>
+                        <img src="images/PokeRun.png"
+                            alt="PokéRun running Pokémon Emerald in the browser with custom controls and save features"
+                            width="800">
+                        <figcaption>PokéRun running Pokémon Emerald in the browser with custom controls and save
+                            features.</figcaption>
+                    </figure>
 
-                <p>
-                    I made this because studying Japanese can mean switching between a lot of
-                    different pages and resources. I wanted to make one place for readings,
-                    vocabulary, grammar, kanji practice, and flashcards.
-                </p>
+                    <p>
+                        PokéRun is a browser-based Pokémon project I have been building around playing
+                        and tracking Pokémon games in one place. It combines an in-browser emulator with
+                        features for saves, run tracking, game information, and multiplayer.
+                    </p>
 
-                <p>
-                    The goal is to make it easier to go through class material without having
-                    to keep jumping between different tabs.
-                </p>
+                    <p>
+                        The project currently supports playing Pokémon Emerald in the browser with
+                        keyboard controls, save syncing, fullscreen, and different game speeds. I have
+                        also been working on multiplayer, where two players can see each other's location
+                        while still keeping their own saves and story progress.
+                    </p>
 
-                <h4>Ideas for the project</h4>
+                    <p>
+                        One of my main goals with PokéRun is figuring out how to read game information
+                        from different Pokémon games and turn it into a consistent interface. I have also
+                        been designing the project so more games and features can be added over time.
+                    </p>
+                </article>
 
-                <ul>
-                    <li>Toggleable furigana</li>
-                    <li>Vocabulary definitions</li>
-                    <li>Grammar explanations</li>
-                    <li>Flashcards</li>
-                </ul>
+                <article>
+                    <h3>D2L Assignment Dashboard</h3>
 
-                <p>
-                    <a
-                        href="https://github.com/Super-0/kanji-practice-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View the Kanji Practice App on GitHub
-                    </a>
-                </p>
-            </article>
+                    <figure>
+                        <img src="images/d2ldashboard.png"
+                            alt="Mobile assignment dashboard showing upcoming work across several classes" width="400">
+                        <figcaption>A concept for seeing assignments from multiple classes in one view.</figcaption>
+                    </figure>
 
-            <article>
-                <h3>D2L Assignment Dashboard</h3>
+                    <p>
+                        I made this because I wanted one place to see what was due instead of
+                        opening every D2L course page separately.
+                    </p>
 
-                <figure>
-                    <img
-                        src="images/d2l-dashboard.png"
-                        alt="Mobile assignment dashboard showing upcoming work across several classes"
-                        width="400"
-                    >
-                    <figcaption>A concept for seeing assignments from multiple classes in one view.</figcaption>
-                </figure>
+                    <p>
+                        It is a Chrome extension that collects upcoming D2L due dates and puts
+                        them into one organized dashboard.
+                    </p>
 
-                <p>
-                    I made this because I wanted one place to see what was due instead of
-                    opening every D2L course page separately.
-                </p>
+                    <p>
+                        I wanted the due dates and assignment details to be easier to scan,
+                        especially during busy weeks.
+                    </p>
 
-                <p>
-                    It is a Chrome extension that collects upcoming D2L due dates and puts
-                    them into one organized dashboard.
-                </p>
+                    <p>
+                        <a href="https://github.com/Super-0/d2l-dashboard" target="_blank" rel="noopener noreferrer">
+                            View the D2L Dashboard on GitHub
+                        </a>
+                    </p>
 
-                <p>
-                    I wanted the due dates and assignment details to be easier to scan,
-                    especially during busy weeks.
-                </p>
+                </article>
 
-                <p>
-                    <a
-                        href="https://github.com/Super-0/d2l-dashboard"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View the D2L Dashboard on GitHub
-                    </a>
-                </p>
+                <article>
+                    <h3>Task Memory API</h3>
 
-            </article>
+                    <figure>
+                        <img src="images/architecture.png"
+                            alt="Task Memory API architecture from local requests to database storage and reminder handling"
+                            width="800">
+                        <figcaption>Task Memory API architecture from local requests to database storage and reminder
+                            handling.</figcaption>
+                    </figure>
 
-            <article>
-                <h3>Task Memory API</h3>
+                    <p>
+                        Task Memory API is a project I made to keep track of memories, tasks,
+                        events, and reminders through an API.
+                    </p>
 
-                <p>
-                    Task Memory API is a project I made to keep track of memories, tasks,
-                    events, and reminders through an API.
-                </p>
+                    <p>
+                        I used Express, Prisma, and SQLite. It helped me learn more about how an
+                        API can organize data and how to make sure the same reminder does not get
+                        sent twice.
+                    </p>
 
-                <p>
-                    I used Express, Prisma, and SQLite. It helped me learn more about how an
-                    API can organize data and how to make sure the same reminder does not get
-                    sent twice.
-                </p>
+                    <p>
+                        <a href="https://github.com/Super-0/task-memory-api" target="_blank" rel="noopener noreferrer">
+                            View Task Memory API on GitHub
+                        </a>
+                    </p>
+                </article>
 
-                <p>
-                    <a
-                        href="https://github.com/Super-0/task-memory-api"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View Task Memory API on GitHub
-                    </a>
-                </p>
-            </article>
+                <article>
+                    <h3>Kanji Practice App / Japanese Companion App</h3>
+
+                    <figure>
+                        <img src="images/japanese-class-companion.png"
+                            alt="Dashboard for a Japanese class companion showing course materials and upcoming work"
+                            width="800">
+                        <figcaption>A dashboard concept for organizing Japanese course materials.</figcaption>
+                    </figure>
+
+                    <p>
+                        I made this because studying Japanese can mean switching between a lot of
+                        different pages and resources. I wanted to make one place for readings,
+                        vocabulary, grammar, kanji practice, and flashcards.
+                    </p>
+
+                    <p>
+                        The goal is to make it easier to go through class material without having
+                        to keep jumping between different tabs.
+                    </p>
+
+                    <h4>Ideas for the project</h4>
+
+                    <ul>
+                        <li>Toggleable furigana</li>
+                        <li>Vocabulary definitions</li>
+                        <li>Grammar explanations</li>
+                        <li>Flashcards</li>
+                    </ul>
+
+                    <p>
+                        <a href="https://github.com/Super-0/kanji-practice-app" target="_blank"
+                            rel="noopener noreferrer">
+                            View the Kanji Practice App on GitHub
+                        </a>
+                    </p>
+                </article>
+            </div>
         </section>
+
+        <div class="section-divider" aria-hidden="true">
+            <span></span>
+
+            <img src="images/y2k-globe.svg" alt="">
+
+            <span></span>
+        </div>
 
         <section id="contact" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Contact</h2>
@@ -206,11 +250,7 @@
             <address>
                 <p>
                     GitHub:
-                    <a
-                        href="https://github.com/Super-0"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <a href="https://github.com/Super-0" target="_blank" rel="noopener noreferrer">
                         github.com/Super-0
                     </a>
                 </p>
@@ -220,8 +260,15 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Ben Kovarik</p>
-        <p><a href="#intro">Back to top</a></p>
+        <div class="footer-info">
+            <p>© 2026 Ben Kovarik</p>
+            <p><a href="#intro">Back to top</a></p>
+        </div>
+
+        <div class="barcode-block" aria-hidden="true">
+            <div class="barcode"></div>
+            <p>BK_PORTFOLIO_2026</p>
+        </div>
     </footer>
 
 </body>
