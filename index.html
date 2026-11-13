@@ -18,17 +18,22 @@
 
 <body>
 
-    <header>
+    <header id="top">
         <p>
-            <a href="#intro" aria-label="Ben Kovarik portfolio home">
+            <a href="#top" aria-label="Ben Kovarik portfolio home">
                 <img src="images/ben-logo.png" alt="Ben Kovarik logo" width="64" height="64">
             </a>
         </p>
+
         <p>Ben Kovarik</p>
+
+        <button id="theme-toggle" type="button" aria-pressed="false">
+            DISPLAY // LIGHT
+        </button>
 
         <nav aria-label="Primary navigation">
             <ul>
-                <li><a href="#intro">Home</a></li>
+                <li><a href="#top">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -36,108 +41,198 @@
         </nav>
     </header>
 
+
+    <div class="section-indicator">
+
+        <div class="section-arc" aria-hidden="true"></div>
+
+        <div class="wheel-callout" data-callout="0" aria-hidden="true">
+            <span class="callout-dot"></span>
+            <span class="callout-diagonal"></span>
+            <span class="callout-flat"></span>
+            <span class="callout-title">HOME</span>
+        </div>
+
+        <div class="wheel-callout" data-callout="1" aria-hidden="true">
+            <span class="callout-dot"></span>
+            <span class="callout-diagonal"></span>
+            <span class="callout-flat"></span>
+            <span class="callout-title">ABOUT</span>
+        </div>
+
+        <div class="wheel-callout" data-callout="2" aria-hidden="true">
+            <span class="callout-dot"></span>
+            <span class="callout-diagonal"></span>
+            <span class="callout-flat"></span>
+            <span class="callout-title">PROJECTS</span>
+        </div>
+
+        <div class="wheel-callout" data-callout="3" aria-hidden="true">
+            <span class="callout-dot"></span>
+            <span class="callout-diagonal"></span>
+            <span class="callout-flat"></span>
+            <span class="callout-title">CONTACT</span>
+        </div>
+
+        <span id="section-number" aria-hidden="true">//01</span>
+
+        <span id="current-section-status" class="sr-only" aria-live="polite">
+            Home
+        </span>
+
+    </div>
+
+
     <main>
 
-        <section id="intro" aria-labelledby="intro-heading">
-            <h1 id="intro-heading">Hi, I'm Ben</h1>
+        <section id="intro" class="standard-section" aria-labelledby="intro-heading">
 
-            <p>
-                I'm an Information Science student at Michigan State University. I like
-                learning about web development, AI, and how people actually use technology.
-            </p>
+            <div class="section-copy">
 
-            <p>
-                I'm still figuring out what I want to focus on long-term, but I enjoy making
-                projects that solve small problems or make everyday things easier.
-            </p>
+                <h1 id="intro-heading">Hi, I'm Ben</h1>
+
+                <p>
+                    I'm an Information Science student at Michigan State University. I like
+                    learning about web development, AI, and how people actually use technology.
+                </p>
+
+                <p>
+                    I'm still figuring out what I want to focus on long-term, but I enjoy making
+                    projects that solve small problems or make everyday things easier.
+                </p>
+
+            </div>
+
+
+            <aside class="section-side" aria-label="Profile summary">
+
+                <p class="side-label">
+                    PROFILE
+                </p>
+
+                <dl class="side-data">
+
+                    <div>
+                        <dt>Study</dt>
+                        <dd>Information Science</dd>
+                    </div>
+
+                    <div>
+                        <dt>School</dt>
+                        <dd>Michigan State University</dd>
+                    </div>
+
+                    <div>
+                        <dt>Focus</dt>
+                        <dd>Web / AI / Human-Centered Technology</dd>
+                    </div>
+
+                </dl>
+
+            </aside>
+
         </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <span></span>
 
-            <img src="images/y2k-globe.svg" alt="">
+        <section id="about" class="standard-section" aria-labelledby="about-heading">
 
-            <span></span>
-        </div>
+            <div class="section-copy">
 
-        <section id="about" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Me</h2>
+                <h2 id="about-heading">About Me</h2>
 
-            <p>
-                I'm studying Information Science at Michigan State University. I first got
-                interested in technology because I thought programming was cool, but I have
-                also started thinking more about how people use the things that get built.
-            </p>
+                <p>
+                    I'm studying Information Science at Michigan State University. I first got
+                    interested in technology because I thought programming was cool, but I have
+                    also started thinking more about how people use the things that get built.
+                </p>
 
-            <p>
-                I also studied abroad in Japan. It gave me a chance to improve my Japanese
-                and experience a different environment. Learning another language made me
-                notice how much communication and design can affect the way people understand
-                information.
-            </p>
+                <p>
+                    I also studied abroad in Japan. It gave me a chance to improve my Japanese
+                    and experience a different environment. Learning another language made me
+                    notice how much communication and design can affect the way people understand
+                    information.
+                </p>
 
-            <h3>Things I'm interested in</h3>
+            </div>
 
-            <ul>
-                <li>Web development</li>
-                <li>Artificial intelligence</li>
-                <li>Human-centered technology</li>
-                <li>Japanese language and culture</li>
-                <li>Building useful personal projects</li>
-            </ul>
+
+            <aside class="section-side" aria-label="Interests">
+
+                <p class="side-label">
+                    INTERESTS
+                </p>
+
+                <ul class="interest-list">
+                    <li>Web development</li>
+                    <li>Artificial intelligence</li>
+                    <li>Human-centered technology</li>
+                    <li>Japanese language and culture</li>
+                    <li>Useful personal projects</li>
+                </ul>
+
+            </aside>
+
         </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <span></span>
-
-            <img src="images/y2k-globe.svg" alt="">
-
-            <span></span>
-        </div>
 
         <section id="projects" aria-labelledby="projects-heading">
+
             <h2 id="projects-heading">Projects</h2>
 
             <div class="project-grid">
 
                 <article class="featured-project">
+
                     <h3>PokéRun</h3>
 
                     <figure>
                         <img src="images/PokeRun.png"
                             alt="PokéRun running Pokémon Emerald in the browser with custom controls and save features"
                             width="800">
-                        <figcaption>PokéRun running Pokémon Emerald in the browser with custom controls and save
-                            features.</figcaption>
+
+                        <figcaption>
+                            PokéRun running Pokémon Emerald in the browser with custom controls
+                            and save features.
+                        </figcaption>
                     </figure>
 
                     <p>
-                        PokéRun is a browser-based Pokémon project I have been building around playing
-                        and tracking Pokémon games in one place. It combines an in-browser emulator with
-                        features for saves, run tracking, game information, and multiplayer.
+                        PokéRun is a browser-based Pokémon project I have been building around
+                        playing and tracking Pokémon games in one place. It combines an
+                        in-browser emulator with features for saves, run tracking, game
+                        information, and multiplayer.
                     </p>
 
                     <p>
-                        The project currently supports playing Pokémon Emerald in the browser with
-                        keyboard controls, save syncing, fullscreen, and different game speeds. I have
-                        also been working on multiplayer, where two players can see each other's location
-                        while still keeping their own saves and story progress.
+                        The project currently supports playing Pokémon Emerald in the browser
+                        with keyboard controls, save syncing, fullscreen, and different game
+                        speeds. I have also been working on multiplayer, where two players can
+                        see each other's location while still keeping their own saves and story
+                        progress.
                     </p>
 
                     <p>
-                        One of my main goals with PokéRun is figuring out how to read game information
-                        from different Pokémon games and turn it into a consistent interface. I have also
-                        been designing the project so more games and features can be added over time.
+                        One of my main goals with PokéRun is figuring out how to read game
+                        information from different Pokémon games and turn it into a consistent
+                        interface. I have also been designing the project so more games and
+                        features can be added over time.
                     </p>
+
                 </article>
 
+
                 <article>
+
                     <h3>D2L Assignment Dashboard</h3>
 
                     <figure>
                         <img src="images/d2ldashboard.png"
-                            alt="Mobile assignment dashboard showing upcoming work across several classes" width="400">
-                        <figcaption>A concept for seeing assignments from multiple classes in one view.</figcaption>
+                            alt="Mobile assignment dashboard showing upcoming work across several classes"
+                            width="400">
+
+                        <figcaption>
+                            A concept for seeing assignments from multiple classes in one view.
+                        </figcaption>
                     </figure>
 
                     <p>
@@ -156,22 +251,29 @@
                     </p>
 
                     <p>
-                        <a href="https://github.com/Super-0/d2l-dashboard" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Super-0/d2l-dashboard"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             View the D2L Dashboard on GitHub
                         </a>
                     </p>
 
                 </article>
 
+
                 <article>
+
                     <h3>Task Memory API</h3>
 
                     <figure>
                         <img src="images/architecture.png"
                             alt="Task Memory API architecture from local requests to database storage and reminder handling"
                             width="800">
-                        <figcaption>Task Memory API architecture from local requests to database storage and reminder
-                            handling.</figcaption>
+
+                        <figcaption>
+                            Task Memory API architecture from local requests to database storage
+                            and reminder handling.
+                        </figcaption>
                     </figure>
 
                     <p>
@@ -186,31 +288,39 @@
                     </p>
 
                     <p>
-                        <a href="https://github.com/Super-0/task-memory-api" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Super-0/task-memory-api"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             View Task Memory API on GitHub
                         </a>
                     </p>
+
                 </article>
 
+
                 <article class="wide-project">
+
                     <h3>Japanese Companion App</h3>
 
                     <figure>
                         <img src="images/japanese-class-companion.png"
                             alt="Dashboard for a Japanese class companion showing course materials and upcoming work"
                             width="800">
-                        <figcaption>A dashboard concept for organizing Japanese course materials.</figcaption>
+
+                        <figcaption>
+                            A dashboard concept for organizing Japanese course materials.
+                        </figcaption>
                     </figure>
 
                     <p>
-                        I made this because studying Japanese can mean switching between a lot of
-                        different pages and resources. I wanted to make one place for readings,
-                        vocabulary, grammar, kanji practice, and flashcards.
+                        I made this because studying Japanese can mean switching between a lot
+                        of different pages and resources. I wanted to make one place for
+                        readings, vocabulary, grammar, kanji practice, and flashcards.
                     </p>
 
                     <p>
-                        The goal is to make it easier to go through class material without having
-                        to keep jumping between different tabs.
+                        The goal is to make it easier to go through class material without
+                        having to keep jumping between different tabs.
                     </p>
 
                     <h4>Ideas for the project</h4>
@@ -223,53 +333,81 @@
                     </ul>
 
                     <p>
-                        <a href="https://github.com/Super-0/kanji-practice-app" target="_blank"
+                        <a href="https://github.com/Super-0/kanji-practice-app"
+                            target="_blank"
                             rel="noopener noreferrer">
                             View the Kanji Practice App on GitHub
                         </a>
                     </p>
+
                 </article>
+
             </div>
+
         </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <span></span>
 
-            <img src="images/y2k-globe.svg" alt="">
+        <section id="contact" class="standard-section" aria-labelledby="contact-heading">
 
-            <span></span>
-        </div>
+            <div class="section-copy">
 
-        <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Contact</h2>
+                <h2 id="contact-heading">Contact</h2>
 
-            <p>
-                If you want to see more of what I'm working on, you can find me on GitHub.
-            </p>
-
-            <address>
                 <p>
-                    GitHub:
-                    <a href="https://github.com/Super-0" target="_blank" rel="noopener noreferrer">
-                        github.com/Super-0
-                    </a>
+                    If you want to see more of what I'm working on, you can find me on GitHub.
                 </p>
-            </address>
+
+            </div>
+
+
+            <aside class="section-side" aria-label="Contact links">
+
+                <p class="side-label">
+                    LINKS
+                </p>
+
+                <address class="contact-links">
+
+                    <p>
+                        <span>GitHub</span>
+
+                        <a href="https://github.com/Super-0"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            github.com/Super-0
+                        </a>
+                    </p>
+
+                </address>
+
+            </aside>
+
         </section>
 
     </main>
 
+
     <footer>
+
         <div class="footer-info">
             <p>© 2026 Ben Kovarik</p>
-            <p><a href="#intro">Back to top</a></p>
+            <p><a href="#top">Back to top</a></p>
+            <p class="font-credit">
+                Planet Kosmos — Mads Rydahl / The Planet · 13 Misa — Zane Townsend / Unrender
+            </p>
         </div>
 
         <div class="barcode-block" aria-hidden="true">
             <div class="barcode"></div>
             <p>BK_PORTFOLIO_2026</p>
         </div>
+
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
