@@ -17,8 +17,8 @@
 }
 
 @font-face {
-    font-family: "Edistys";
-    src: url("fonts/Edistys.woff2") format("woff2");
+    font-family: "Projects";
+    src: url("fonts/PROJECTS.TTF") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -430,7 +430,7 @@ main > section {
 h1 {
     margin: 0 0 28px;
 
-    font-family: "Edistys", "Orbitron", sans-serif;
+    font-family: "Projects", "Orbitron", sans-serif;
 
     font-size: clamp(3.2rem, 5vw, 4.6rem);
     font-weight: 400;
@@ -684,7 +684,7 @@ h3 {
     margin-top: 0;
     margin-bottom: 15px;
 
-    font-family: "Edistys", "Orbitron", sans-serif;
+    font-family: "Projects", "Orbitron", sans-serif;
 
     font-size: clamp(1.3rem, 1.8vw, 1.8rem);
     font-weight: 400;
