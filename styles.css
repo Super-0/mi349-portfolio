@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap");
 
 @font-face {
     font-family: "02.10";
@@ -11,14 +11,6 @@
 @font-face {
     font-family: "13 Misa";
     src: url("fonts/13Misa.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Projects";
-    src: url("fonts/PROJECTS.TTF") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -430,7 +422,7 @@ main > section {
 h1 {
     margin: 0 0 28px;
 
-    font-family: "Projects", "Orbitron", sans-serif;
+    font-family: "Michroma", "Orbitron", sans-serif;
 
     font-size: clamp(3.2rem, 5vw, 4.6rem);
     font-weight: 400;
@@ -684,7 +676,7 @@ h3 {
     margin-top: 0;
     margin-bottom: 15px;
 
-    font-family: "Projects", "Orbitron", sans-serif;
+    font-family: "Orbitron", sans-serif;
 
     font-size: clamp(1.3rem, 1.8vw, 1.8rem);
     font-weight: 400;
