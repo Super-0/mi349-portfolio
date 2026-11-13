@@ -1,33 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap");
 
 @font-face {
-    font-family: "Planet Kosmos";
-    src: url("fonts/PLANK___.TTF") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: "02.10";
-    src: url("fonts/02.10FEN.TTF") format("truetype");
-    font-weight: 400;
+    src: url("fonts/0210fenotype.woff2") format("woff2");
+    font-weight: normal;
     font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "02.10";
-    src: url("fonts/02.10ITA.TTF") format("truetype");
-    font-weight: 400;
-    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
     font-family: "13 Misa";
-    src: url("fonts/13_Misa.TTF") format("truetype");
-    font-weight: 400;
+    src: url("fonts/13Misa.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Edistys";
+    src: url("fonts/Edistys.woff2") format("woff2");
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
