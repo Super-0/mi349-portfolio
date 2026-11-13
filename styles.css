@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap");
 
-
-@font-face {
-    font-family: "ZeroTwoTen";
-    src: url("fonts/02.10FEN.TTF") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-
 @font-face {
     font-family: "Planet Kosmos";
     src: url("fonts/PLANK___.TTF") format("truetype");
@@ -18,6 +8,21 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "02.10";
+    src: url("fonts/02.10FEN.TTF") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "02.10";
+    src: url("fonts/02.10ITA.TTF") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
 
 @font-face {
     font-family: "13 Misa";
@@ -26,7 +31,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 
 :root {
     --background: #f2f2ef;
@@ -44,16 +48,13 @@
     --section-padding: clamp(90px, 10vh, 120px);
 }
 
-
 * {
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
 
 body {
     margin: 0;
@@ -77,7 +78,6 @@ body {
     line-height: 1.65;
 }
 
-
 .sr-only {
     position: absolute;
 
@@ -96,7 +96,6 @@ body {
     border: 0;
 }
 
-
 header {
     position: relative;
 
@@ -107,7 +106,6 @@ header {
 
     border-bottom: 4px solid var(--blue);
 }
-
 
 header img {
     display: block;
@@ -120,7 +118,6 @@ header img {
     border: 1px solid #d7d7d7;
 }
 
-
 header p {
     margin: 4px 0;
 
@@ -131,7 +128,6 @@ header p {
 
     letter-spacing: 0.1em;
 }
-
 
 #theme-toggle {
     position: absolute;
@@ -149,10 +145,10 @@ header p {
     border: 1px solid var(--light-blue);
     border-radius: 2px;
 
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Orbitron", sans-serif;
 
     font-size: 0.69rem;
-    font-weight: 600;
+    font-weight: 500;
 
     letter-spacing: 0.1em;
 
@@ -164,7 +160,6 @@ header p {
         3px 3px 0 rgba(48, 79, 112, 0.35);
 }
 
-
 nav {
     margin-top: 24px;
 
@@ -172,7 +167,6 @@ nav {
 
     border-top: 1px solid #333638;
 }
-
 
 nav ul {
     display: flex;
@@ -188,11 +182,9 @@ nav ul {
     text-align: center;
 }
 
-
 nav li {
     margin: 0;
 }
-
 
 nav a {
     color: #eeeeee;
@@ -211,7 +203,6 @@ nav a {
         1px 0 rgba(143, 167, 188, 0.35);
 }
 
-
 nav a::before {
     content: "☻";
 
@@ -220,11 +211,9 @@ nav a::before {
     color: var(--light-blue);
 }
 
-
 nav a:hover {
     color: var(--light-blue);
 }
-
 
 main {
     width: 100%;
@@ -232,7 +221,6 @@ main {
     margin: 0;
     padding: 0;
 }
-
 
 main > section {
     position: relative;
@@ -242,7 +230,6 @@ main > section {
 
     margin: 0 auto;
 }
-
 
 .standard-section {
     min-height: var(--standard-section-height);
@@ -267,11 +254,9 @@ main > section {
     align-items: center;
 }
 
-
 .section-copy {
     max-width: 760px;
 }
-
 
 .section-side {
     min-width: 0;
@@ -283,7 +268,6 @@ main > section {
         rgba(48, 79, 112, 0.45);
 }
 
-
 .side-label {
     margin: 0 0 30px;
 
@@ -291,7 +275,7 @@ main > section {
 
     font-family: "13 Misa", "Orbitron", sans-serif;
 
-    font-size: 0.86rem;
+    font-size: 0.82rem;
     font-weight: 400;
 
     line-height: 1.2;
@@ -299,15 +283,11 @@ main > section {
     letter-spacing: 0;
 
     text-transform: uppercase;
-
-    font-synthesis: none;
 }
-
 
 .side-data {
     margin: 0;
 }
-
 
 .side-data div {
     padding: 13px 0;
@@ -317,13 +297,11 @@ main > section {
         rgba(104, 107, 109, 0.28);
 }
 
-
 .side-data div:last-child {
     border-bottom:
         1px solid
         rgba(104, 107, 109, 0.28);
 }
-
 
 .side-data dt {
     margin-bottom: 4px;
@@ -333,13 +311,12 @@ main > section {
     font-family: "Space Grotesk", sans-serif;
 
     font-size: 0.68rem;
-    font-weight: 700;
+    font-weight: 600;
 
     letter-spacing: 0.12em;
 
     text-transform: uppercase;
 }
-
 
 .side-data dd {
     margin: 0;
@@ -353,7 +330,6 @@ main > section {
     line-height: 1.45;
 }
 
-
 .interest-list {
     margin: 0;
     padding: 0;
@@ -362,7 +338,6 @@ main > section {
 
     counter-reset: interests;
 }
-
 
 .interest-list li {
     position: relative;
@@ -384,13 +359,11 @@ main > section {
     font-size: 0.9rem;
 }
 
-
 .interest-list li:last-child {
     border-bottom:
         1px solid
         rgba(104, 107, 109, 0.28);
 }
-
 
 .interest-list li::before {
     content:
@@ -410,13 +383,11 @@ main > section {
     font-weight: 600;
 }
 
-
 .contact-links {
     margin: 0;
 
     font-style: normal;
 }
-
 
 .contact-links p {
     margin: 0;
@@ -437,20 +408,18 @@ main > section {
         rgba(104, 107, 109, 0.28);
 }
 
-
 .contact-links span {
     color: var(--gray);
 
     font-family: "Space Grotesk", sans-serif;
 
     font-size: 0.68rem;
-    font-weight: 700;
+    font-weight: 600;
 
     letter-spacing: 0.12em;
 
     text-transform: uppercase;
 }
-
 
 .contact-links a {
     font-family: "Space Grotesk", sans-serif;
@@ -459,7 +428,6 @@ main > section {
     font-weight: 500;
 }
 
-
 #intro h1,
 #intro p {
     position: relative;
@@ -467,27 +435,25 @@ main > section {
     z-index: 1;
 }
 
-
 h1 {
     margin: 0 0 36px;
 
     font-family: "Planet Kosmos", "Orbitron", sans-serif;
 
-    font-size: clamp(3.2rem, 5.8vw, 5.4rem);
+    font-size: clamp(3.4rem, 6.5vw, 6rem);
     font-weight: 400;
     font-style: normal;
 
-    line-height: 0.92;
+    line-height: 0.86;
 
-    letter-spacing: 0.01em;
+    letter-spacing: 0;
+
+    text-transform: uppercase;
 
     text-shadow:
         5px 0 rgba(48, 79, 112, 0.45),
         -2px 2px rgba(0, 0, 0, 0.22);
-
-    font-synthesis: none;
 }
-
 
 h1::after {
     content: "_";
@@ -507,19 +473,18 @@ h1::after {
         infinite;
 }
 
-
 h2 {
     display: inline-block;
 
     margin: 0 0 36px;
 
-    font-family: "ZeroTwoTen", "Orbitron", sans-serif;
+    font-family: "02.10", "Orbitron", sans-serif;
 
-    font-size: clamp(2.65rem, 4.4vw, 4rem);
+    font-size: clamp(3rem, 5.2vw, 4.8rem);
     font-weight: 400;
     font-style: normal;
 
-    line-height: 0.9;
+    line-height: 0.87;
 
     letter-spacing: 0;
 
@@ -528,10 +493,7 @@ h2 {
     text-shadow:
         3px 0
         rgba(48, 79, 112, 0.3);
-
-    font-synthesis: none;
 }
-
 
 h2::before {
     content: "//";
@@ -542,14 +504,13 @@ h2::before {
 
     font-family: "Orbitron", sans-serif;
 
-    font-size: 0.45em;
+    font-size: 0.4em;
     font-weight: 600;
 
     vertical-align: middle;
 
     text-shadow: none;
 }
-
 
 h2::after {
     content: "_";
@@ -568,7 +529,6 @@ h2::after {
         infinite;
 }
 
-
 .section-copy > p {
     max-width: 700px;
 
@@ -582,11 +542,9 @@ h2::after {
     font-size: 1rem;
 }
 
-
 .section-copy > p:last-child {
     margin-bottom: 0;
 }
-
 
 #projects {
     min-height: 100svh;
@@ -631,12 +589,10 @@ clearly belong to the same card system, but feel more like the main project.
     margin-top: 8px;
 }
 
-
 .wide-project figure img {
     width: 100%;
     max-width: 950px;
 }
-
 
 .project-grid article {
     position: relative;
@@ -661,28 +617,93 @@ clearly belong to the same card system, but feel more like the main project.
         rgba(48, 79, 112, 0.18);
 }
 
-
 .project-grid article h3 {
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    padding-bottom: 10px;
+
+    border-bottom:
+        1px solid
+        #aab3ba;
+}
+
+.project-grid article p {
+    max-width: 900px;
+
+    margin:
+        0
+        0
+        18px;
+
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.project-grid article p:last-child {
+    margin-bottom: 0;
+}
+
+.featured-project {
+    border-top:
+        7px solid
+        var(--blue);
+
+    box-shadow:
+        7px 7px 0
+        rgba(32, 48, 64, 0.26),
+
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.95),
+
+        inset 0 -1px 0
+        rgba(48, 79, 112, 0.18);
+}
+
+.featured-project::before {
+    content: "FEATURED // 01";
+
+    position: absolute;
+
+    top: 12px;
+    right: 18px;
+
+    padding: 2px 6px;
+
+    background-color: var(--black);
+    color: var(--background);
+
+    font-family: "13 Misa", "Orbitron", sans-serif;
+
+    font-size: 0.56rem;
+    font-weight: 400;
+
+    letter-spacing: 0;
+}
+
+.featured-project h3 {
+    padding-top: 14px;
+}
+
+h3 {
     margin-top: 0;
     margin-bottom: 18px;
 
-    font-family: "Planet Kosmos", "Space Grotesk", sans-serif;
+    font-family: "Planet Kosmos", "Orbitron", sans-serif;
 
-    font-size: clamp(1.65rem, 2.35vw, 2.2rem);
+    font-size: clamp(1.8rem, 2.8vw, 2.7rem);
     font-weight: 400;
     font-style: normal;
 
-    line-height: 1;
+    line-height: 0.95;
 
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
+
+    text-transform: uppercase;
 
     text-shadow:
         2px 0
         rgba(48, 79, 112, 0.25);
-
-    font-synthesis: none;
 }
-
 
 h3::before {
     content: "✴︎";
@@ -696,22 +717,20 @@ h3::before {
     text-shadow: none;
 }
 
-
 h4 {
     margin-top: 28px;
 
     color: var(--blue);
 
-    font-family: "Orbitron", sans-serif;
+    font-family: "13 Misa", "Orbitron", sans-serif;
 
-    font-size: 0.78rem;
-    font-weight: 600;
+    font-size: 0.82rem;
+    font-weight: 400;
 
-    letter-spacing: 0.08em;
+    letter-spacing: 0;
 
     text-transform: uppercase;
 }
-
 
 figure {
     margin:
@@ -732,7 +751,6 @@ figure {
         var(--blue);
 }
 
-
 figure img {
     display: block;
 
@@ -743,7 +761,6 @@ figure img {
         2px solid
         var(--black);
 }
-
 
 figcaption {
     margin-top: 8px;
@@ -765,14 +782,12 @@ figcaption {
     font-weight: 500;
 }
 
-
 .project-grid article a {
     font-family: "Space Grotesk", sans-serif;
 
     font-size: 0.91rem;
-    font-weight: 700;
+    font-weight: 600;
 }
-
 
 a {
     color: var(--blue);
@@ -782,11 +797,9 @@ a {
     text-underline-offset: 3px;
 }
 
-
 a:hover {
     color: var(--black);
 }
-
 
 .section-indicator {
     position: fixed;
@@ -810,7 +823,6 @@ a:hover {
 
     font-family: "Orbitron", sans-serif;
 }
-
 
 .section-arc {
     position: absolute;
@@ -840,7 +852,6 @@ a:hover {
         transform;
 }
 
-
 .section-arc::before {
     content: "";
 
@@ -861,7 +872,6 @@ a:hover {
         rgba(255, 255, 255, 0.16);
 }
 
-
 .section-arc::after {
     content: "";
 
@@ -879,7 +889,6 @@ a:hover {
         0 0 0 5px
         rgba(8, 9, 10, 0.08);
 }
-
 
 #section-number {
     position: absolute;
@@ -904,7 +913,6 @@ a:hover {
         2px 2px 0
         rgba(8, 9, 10, 0.38);
 }
-
 
 .wheel-callout {
     position: absolute;
@@ -931,7 +939,6 @@ a:hover {
         opacity;
 }
 
-
 .callout-dot {
     position: absolute;
 
@@ -954,7 +961,6 @@ a:hover {
         var(--accent);
 }
 
-
 .callout-diagonal {
     position: absolute;
 
@@ -973,7 +979,6 @@ a:hover {
         rotate(-45deg);
 }
 
-
 .callout-flat {
     position: absolute;
 
@@ -985,7 +990,6 @@ a:hover {
 
     background-color: var(--line);
 }
-
 
 .callout-title {
     position: absolute;
@@ -1009,17 +1013,14 @@ a:hover {
     white-space: nowrap;
 }
 
-
 .wheel-callout.is-active .callout-diagonal,
 .wheel-callout.is-active .callout-flat {
     background-color: var(--black);
 }
 
-
 .wheel-callout.is-active .callout-title {
     color: var(--black);
 }
-
 
 footer {
     padding: 36px 8%;
@@ -1032,7 +1033,6 @@ footer {
         var(--blue);
 }
 
-
 footer p {
     margin: 5px 0;
 
@@ -1041,11 +1041,9 @@ footer p {
     font-size: 0.8rem;
 }
 
-
 footer a {
     color: var(--light-blue);
 }
-
 
 .font-credit {
     max-width: 650px;
@@ -1061,13 +1059,11 @@ footer a {
     letter-spacing: 0.025em;
 }
 
-
 .barcode-block {
     width: 180px;
 
     margin-top: 25px;
 }
-
 
 .barcode {
     width: 180px;
@@ -1087,7 +1083,6 @@ footer a {
         );
 }
 
-
 .barcode-block p {
     margin-top: 6px;
 
@@ -1100,13 +1095,11 @@ footer a {
     letter-spacing: 0.1em;
 }
 
-
 ::selection {
     background-color: var(--blue);
 
     color: white;
 }
-
 
 @keyframes blink {
 
@@ -1115,14 +1108,11 @@ footer a {
         opacity: 1;
     }
 
-
     50%,
     100% {
         opacity: 0;
     }
-
 }
-
 
 body.dark-mode {
     background-color: #08090a;
@@ -1141,7 +1131,6 @@ body.dark-mode {
     color: #e8ecef;
 }
 
-
 body.dark-mode header {
     background-color: #050607;
 
@@ -1149,17 +1138,14 @@ body.dark-mode header {
         var(--light-blue);
 }
 
-
 body.dark-mode nav {
     border-top-color:
         #48535d;
 }
 
-
 body.dark-mode nav a {
     color: #e8ecef;
 }
-
 
 body.dark-mode article {
     background-color: #111820;
@@ -1177,12 +1163,10 @@ body.dark-mode article {
         rgba(255, 255, 255, 0.08);
 }
 
-
 body.dark-mode article h3 {
     border-bottom-color:
         #52616d;
 }
-
 
 body.dark-mode figure {
     background-color: #0e141a;
@@ -1192,27 +1176,22 @@ body.dark-mode figure {
         var(--light-blue);
 }
 
-
 body.dark-mode figure img {
     border-color:
         var(--light-blue);
 }
 
-
 body.dark-mode figcaption {
     color: #aeb8c0;
 }
-
 
 body.dark-mode a {
     color: #a9c0d4;
 }
 
-
 body.dark-mode a:hover {
     color: white;
 }
-
 
 body.dark-mode #theme-toggle {
     color: #e8ecef;
@@ -1220,17 +1199,14 @@ body.dark-mode #theme-toggle {
     border-color: #e8ecef;
 }
 
-
 body.dark-mode .section-side {
     border-left-color:
         rgba(143, 167, 188, 0.4);
 }
 
-
 body.dark-mode .side-label {
     color: var(--light-blue);
 }
-
 
 body.dark-mode .side-data div,
 body.dark-mode .interest-list li,
@@ -1239,11 +1215,9 @@ body.dark-mode .contact-links p {
         rgba(143, 167, 188, 0.22);
 }
 
-
 body.dark-mode .side-data dd {
     color: #e8ecef;
 }
-
 
 body.dark-mode .section-arc {
     border-color: #000000;
@@ -1256,7 +1230,6 @@ body.dark-mode .section-arc {
         rgba(143, 167, 188, 0.05);
 }
 
-
 body.dark-mode .section-arc::before {
     background-color:
         var(--blue);
@@ -1264,7 +1237,6 @@ body.dark-mode .section-arc::before {
     border-color:
         #000000;
 }
-
 
 body.dark-mode .section-arc::after {
     border-color: #000000;
@@ -1274,33 +1246,27 @@ body.dark-mode .section-arc::after {
         rgba(0, 0, 0, 0.14);
 }
 
-
 body.dark-mode .callout-dot {
     border-color: #08090a;
 }
-
 
 body.dark-mode .callout-diagonal,
 body.dark-mode .callout-flat {
     background-color: #63798d;
 }
 
-
 body.dark-mode .callout-title {
     color: #8fa7bc;
 }
-
 
 body.dark-mode .wheel-callout.is-active .callout-diagonal,
 body.dark-mode .wheel-callout.is-active .callout-flat {
     background-color: #e8ecef;
 }
 
-
 body.dark-mode .wheel-callout.is-active .callout-title {
     color: #e8ecef;
 }
-
 
 @media (min-width: 600px) {
 
@@ -1311,13 +1277,10 @@ body.dark-mode .wheel-callout.is-active .callout-title {
         justify-content: center;
     }
 
-
     nav li {
         width: 45%;
     }
-
 }
-
 
 @media (min-width: 900px) {
 
@@ -1328,11 +1291,9 @@ body.dark-mode .wheel-callout.is-active .callout-title {
         flex-wrap: nowrap;
     }
 
-
     nav li {
         width: auto;
     }
-
 
     .project-grid {
         grid-template-columns:
@@ -1340,13 +1301,11 @@ body.dark-mode .wheel-callout.is-active .callout-title {
             1fr;
     }
 
-
     .featured-project,
     .wide-project {
         grid-column:
             1 / -1;
     }
-
 
     footer {
         display: flex;
@@ -1358,15 +1317,12 @@ body.dark-mode .wheel-callout.is-active .callout-title {
             flex-end;
     }
 
-
     .barcode-block {
         margin-top: 0;
 
         text-align: right;
     }
-
 }
-
 
 @media (min-width: 1200px) {
 
@@ -1374,13 +1330,10 @@ body.dark-mode .wheel-callout.is-active .callout-title {
         gap: 40px;
     }
 
-
     .project-grid article {
         padding: 30px;
     }
-
 }
-
 
 @media (max-width: 699px) {
 
@@ -1390,13 +1343,11 @@ body.dark-mode .wheel-callout.is-active .callout-title {
         --section-padding: 75px;
     }
 
-
     #theme-toggle {
         right: 6%;
 
         width: 145px;
     }
-
 
     .standard-section {
         min-height: 100svh;
@@ -1407,7 +1358,6 @@ body.dark-mode .wheel-callout.is-active .callout-title {
 
         align-content: center;
     }
-
 
     .section-side {
         padding-left: 0;
@@ -1421,28 +1371,23 @@ body.dark-mode .wheel-callout.is-active .callout-title {
             rgba(48, 79, 112, 0.45);
     }
 
-
     h1 {
-        font-size: 2.7rem;
+        font-size: 2.8rem;
     }
-
 
     h2 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
-
 
     #projects {
         padding-top: 75px;
         padding-bottom: 110px;
     }
 
-
     .section-indicator {
         width: 100vw;
         height: 250px;
     }
-
 
     .section-arc {
         left: -180px;
@@ -1454,20 +1399,17 @@ body.dark-mode .wheel-callout.is-active .callout-title {
         border-width: 7px;
     }
 
-
     .section-arc::before {
         inset: 29px;
 
         border-width: 5px;
     }
 
-
     .section-arc::after {
         inset: 48px;
 
         border-width: 2px;
     }
-
 
     #section-number {
         left: 35px;
@@ -1476,17 +1418,14 @@ body.dark-mode .wheel-callout.is-active .callout-title {
         font-size: 0.9rem;
     }
 
-
     .wheel-callout {
         width: 160px;
         height: 70px;
     }
 
-
     .callout-diagonal {
         width: 36px;
     }
-
 
     .callout-flat {
         left: 29px;
@@ -1495,16 +1434,13 @@ body.dark-mode .wheel-callout.is-active .callout-title {
         width: 100px;
     }
 
-
     .callout-title {
         left: 34px;
         bottom: 33px;
 
         font-size: 0.56rem;
     }
-
 }
-
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -1512,10 +1448,8 @@ body.dark-mode .wheel-callout.is-active .callout-title {
         scroll-behavior: auto;
     }
 
-
     h1::after,
     h2::after {
         animation: none;
     }
-
 }
